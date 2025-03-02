@@ -2,8 +2,6 @@
 
 An interactive dashboard built with React and TypeScript for tracking and visualizing AI Bootcamp metrics, student progress, and learning resources.
 
-![Dashboard Preview](Header%20Container.png)
-
 ## Features
 
 - **Interactive Data Visualization**: Utilizes Recharts for dynamic charts and graphs
