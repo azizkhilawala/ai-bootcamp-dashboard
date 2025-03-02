@@ -1,0 +1,47 @@
+{
+  "name": "ai-bootcamp-dashboard",
+  "version": "1.0.0",
+  "description": "AI Bootcamp Dashboard for Side School",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@types/node": "^16.18.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dnd": "^2.0.36",
+    "@types/react-dnd-html5-backend": "^3.0.2",
+    "@types/react-dom": "^18.2.0",
+    "ajv": "^8.12.0",
+    "ajv-keywords": "^5.1.0",
+    "react": "^18.2.0",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dom": "^18.2.0",
+    "recharts": "^2.10.0",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.6",
+    "react-scripts": "5.0.1",
+    "tailwindcss": "^3.0.23"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,6 +1,31 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
 .DS_Store
-__pycache__/
-*.pyc
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 .env
-.vscode/
-.idea/ 
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE specific files
+.idea
+.vscode
+*.swp
+*.swo
+
+# Local development
+*.log
