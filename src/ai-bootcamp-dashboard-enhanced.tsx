@@ -111,25 +111,44 @@ const Sidebar = ({
         {!isCollapsed && (
           <div className="space-y-4">
             <div className="flex items-center justify-between">
-              <span className={`${theme.text} text-sm`}>Dark Mode</span>
+              <span className={`${theme.text} text-sm`}>Theme</span>
               <button
                 onClick={() => setDarkMode(!darkMode)}
-                className={`p-2 rounded-md ${theme.card} ${theme.border}`}
+                className={`px-3 py-2 rounded-md ${theme.card} ${theme.border} transition-colors 
+                  ${darkMode 
+                    ? 'hover:bg-gray-700/50 hover:border-gray-600' 
+                    : 'hover:bg-gray-100'
+                  } 
+                  flex items-center gap-2 group`}
+                aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
               >
-                {darkMode ? '🌞' : '🌙'}
-              </button>
-            </div>
-            <div className="flex items-center justify-between">
-              <span className={`${theme.text} text-sm`}>View Density</span>
-              <button
-                onClick={() => setViewDensity(viewDensity === 'compact' ? 'comfortable' : 'compact')}
-                className={`p-2 rounded-md ${theme.card} ${theme.border} text-sm ${theme.text}`}
-              >
-                {viewDensity === 'compact' ? 'Compact' : 'Comfortable'}
+                <span className="text-base">{darkMode ? '🌞' : '🌙'}</span>
+                <span className={`text-sm ${theme.text} ${darkMode ? 'group-hover:text-gray-200' : 'group-hover:text-gray-900'}`}>
+                  {darkMode ? 'Light' : 'Dark'}
+                </span>
               </button>
             </div>
           </div>
         )}
+
+        {/* Buy Me a Coffee Button */}
+        <a
+          href="https://buymeacoffee.com/sobo.collective"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`mt-4 w-full flex items-center justify-center p-2 rounded-md transition-colors
+            bg-[#FFDD00] hover:bg-[#FFDD00]/90 text-black font-medium
+            ${isCollapsed ? 'px-2' : 'px-4'}`}
+        >
+          {isCollapsed ? (
+            <span className="text-xl">☕</span>
+          ) : (
+            <>
+              <span className="text-xl mr-2">☕</span>
+              <span>Buy Me a Coffee</span>
+            </>
+          )}
+        </a>
       </div>
     </div>
   );
@@ -1545,7 +1564,7 @@ const DashboardPage: React.FC = () => {
                 {workshop.tools.map((tool: string) => (
                   <span key={tool} className={`px-2.5 py-1 rounded-full text-xs font-medium ${
                     darkMode 
-                      ? 'bg-blue-900 text-blue-200 border border-blue-700' 
+                      ? 'bg-blue-900 text-blue-200 border border-blue-800' 
                       : 'bg-blue-100 text-blue-800'
                   }`}>
                     {tool}
