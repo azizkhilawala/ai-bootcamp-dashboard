@@ -133,7 +133,7 @@ const Sidebar = ({
 
         {/* Buy Me a Coffee Button */}
         <a
-          href="https://buymeacoffee.com/sobo.collective"
+          href="https://ko-fi.com/azizkhilawala"
           target="_blank"
           rel="noopener noreferrer"
           className={`mt-4 w-full flex items-center justify-center p-2 rounded-md transition-colors
@@ -145,7 +145,7 @@ const Sidebar = ({
           ) : (
             <>
               <span className="text-xl mr-2">☕</span>
-              <span>Buy Me a Coffee</span>
+              <span>Buy Me a Ko-Fi</span>
             </>
           )}
         </a>
