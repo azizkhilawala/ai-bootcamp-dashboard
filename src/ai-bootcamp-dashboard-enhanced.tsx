@@ -1398,7 +1398,7 @@ const DashboardPage: React.FC = () => {
                       key={tool} 
                       className={`px-2.5 py-1 rounded-full text-xs font-medium ${
                         darkMode 
-                          ? 'bg-blue-900/30 text-blue-200 border border-blue-800/50' 
+                          ? 'bg-blue-900/30 text-blue-200 border border-blue-800' 
                           : 'bg-blue-50 text-blue-600 border border-blue-100'
                       }`}
                     >
@@ -1492,7 +1492,7 @@ const DashboardPage: React.FC = () => {
                             key={tool}
                             className={`px-2 py-0.5 rounded-full text-xs font-medium ${
                               darkMode 
-                                ? 'bg-blue-900/30 text-blue-200 border border-blue-800/50' 
+                                ? 'bg-blue-900/30 text-blue-200 border border-blue-800' 
                                 : 'bg-blue-50 text-blue-600 border border-blue-100'
                             }`}
                           >
